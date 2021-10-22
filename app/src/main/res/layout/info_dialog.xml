@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/width_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Width"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/width_value_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="3867"
+        app:layout_constraintStart_toEndOf="@+id/width_txt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/height_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Height"
+        app:layout_constraintStart_toStartOf="@+id/width_txt"
+        app:layout_constraintTop_toBottomOf="@+id/width_txt" />
+
+    <TextView
+        android:id="@+id/height_value_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="3005"
+        app:layout_constraintStart_toStartOf="@+id/width_value_txt"
+        app:layout_constraintTop_toBottomOf="@+id/width_value_txt" />
+
+    <TextView
+        android:id="@+id/size_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Size"
+        app:layout_constraintStart_toStartOf="@+id/height_txt"
+        app:layout_constraintTop_toBottomOf="@+id/height_txt" />
+
+    <TextView
+        android:id="@+id/size_value_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="300"
+        app:layout_constraintStart_toStartOf="@+id/height_value_txt"
+        app:layout_constraintTop_toBottomOf="@+id/height_value_txt" />
+
+    <TextView
+        android:id="@+id/views_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Views"
+        app:layout_constraintStart_toStartOf="@+id/size_txt"
+        app:layout_constraintTop_toBottomOf="@+id/size_txt" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Downloads"
+        app:layout_constraintStart_toStartOf="@+id/views_txt"
+        app:layout_constraintTop_toBottomOf="@+id/views_txt" />
+
+    <TextView
+        android:id="@+id/views_value_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="300"
+        app:layout_constraintStart_toStartOf="@+id/size_value_txt"
+        app:layout_constraintTop_toBottomOf="@+id/size_value_txt" />
+
+    <TextView
+        android:id="@+id/downloads_value_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="300"
+        app:layout_constraintStart_toStartOf="@+id/views_value_txt"
+        app:layout_constraintTop_toBottomOf="@+id/views_value_txt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

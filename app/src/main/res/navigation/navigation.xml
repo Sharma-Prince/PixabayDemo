@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/biometricFragment2">
+    <fragment
+        android:id="@+id/biometricFragment2"
+        android:name="com.example.android.pixabaydemo.fragment.BiometricFragment"
+        android:label="fragment_biometric"
+        tools:layout="@layout/fragment_biometric" >
+        <action
+            android:id="@+id/action_biometricFragment2_to_imageSearchFragment"
+            app:destination="@id/imageSearchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/imageSearchFragment"
+        android:name="com.example.android.pixabaydemo.fragment.ImageSearchFragment"
+        android:label="fragment_image_search"
+        tools:layout="@layout/fragment_image_search" >
+        <action
+            android:id="@+id/action_imageSearchFragment_to_staggeredImageFragment"
+            app:destination="@id/staggeredImageFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/largeImageFragment"
+        android:name="com.example.android.pixabaydemo.fragment.LargeImageFragment"
+        android:label="fragment_large_image"
+        tools:layout="@layout/fragment_large_image"
+        />
+    <fragment
+        android:id="@+id/staggeredImageFragment"
+        android:name="com.example.android.pixabaydemo.fragment.StaggeredImageFragment"
+        android:label="fragment_staggered_image"
+        tools:layout="@layout/fragment_staggered_image" >
+        <action
+            android:id="@+id/action_staggeredImageFragment_to_largeImageFragment"
+            app:destination="@id/largeImageFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>
